@@ -1,22 +1,18 @@
 package its_meow.basemod;
 
-import org.apache.logging.log4j.Logger;
-
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod.EventBusSubscriber
+@Mod.EventBusSubscriber(modid = Ref.MODID)
 @Mod(modid = Ref.MODID, name = Ref.NAME, version = Ref.VERSION)
 public class BaseMod {
-	
-	public static Logger LOGGER = null;
-	
-	 @EventHandler
+
+	@EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        LOGGER = event.getModLog();
+
     }
 
     @EventHandler
@@ -28,5 +24,5 @@ public class BaseMod {
     public void postInit(FMLPostInitializationEvent event) {
 
 	}
-	
+
 }
