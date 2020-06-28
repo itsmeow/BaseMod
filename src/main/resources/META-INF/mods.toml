@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+issueTrackerURL="http://github.com/itsmeow/basemod/issues"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/basemod"
+logoFile="icon.png"
+credits="itsmeow for Programming"
+authors="itsmeow"
+[[mods]]
+modId="basemod"
+version="${file.jarVersion}"
+displayName="BaseMod"
+description='''
+A base mod.'''
+[[dependencies.basemod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[28.2.0,)"
+    ordering="NONE"
+    side="BOTH"
