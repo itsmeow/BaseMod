@@ -20,4 +20,6 @@ build
 # other
 eclipse
 run
-logs/
+logs
+.vscode
+.architectury-transformer

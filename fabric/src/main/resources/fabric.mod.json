@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "basemod",
+  "version": "${version}",
+  "name": "BaseMod",
+  "description": "Example mod",
+  "authors": ["itsmeowdev"],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/basemod",
+    "sources": "https://github.com/itsmeow/BaseMod",
+    "issues": "https://github.com/itsmeow/BaseMod/issues"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.itsmeow.basemod.BaseModFabric"],
+    "client": ["dev.itsmeow.basemod.client.BaseModFabricClient"]
+  },
+  "depends": {
+    "minecraft": "1.16.5",
+    "fabricloader": ">=0.12.0",
+    "fabric": ">=0.32.0"
+  },
+  "mixins": [],
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.itsmeow.dev/"
+      }
+    }
+  }
+}
