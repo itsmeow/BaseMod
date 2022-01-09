@@ -17,4 +17,4 @@ Example mod'''
     mandatory=true
     versionRange="[36.2.0,)"
     ordering="NONE"
-    side="SERVER"
+    side="BOTH"
